@@ -1,7 +1,7 @@
 # JobSearch
 Job Portal
 //create user profile 
-API - /api/createJob
+API - /api/profileupload
 Method -post
 req : {
 name:vikas
@@ -40,7 +40,7 @@ res : {
 
 //update user profile
 Method -put
-API - /api/updateJob/:id
+API - /api/updateCandidate/:id
 req : {
 name:vikas
 phoneNumber:1234567891
@@ -77,23 +77,23 @@ Res : {
 
 //get single data
 Method - get
-API - /api/getJob/:id
+API - /api/getCandidate/:id
 req : /api/getJob/5451545645fdi655
 
 //get all data
 Method - get
-API - /api/getAllJobs
+API - /api/getAllCandidates
 req : /api/getAllJobs
 
 //get all job
 Method - get
-API - /api/getJobsForCandidates/:id
+API - /api/getCandidatesForJob/:id
 req : /api/getJobsForCandidates/544655664dfd4656
 
 
 //create job information
 Method - post
-API - /api/profileupload
+API - /api/createJob
 Req : {
 salary:25226252,
 jobType: fulltime,
@@ -107,6 +107,29 @@ Res : {
             "__v": 0,
             "salary": "25226252",
             "jobType": fulltime,
+            "jobLocation" : Bangalore,
+            "_id": "594409ae046c7c3e38daef91",
+            "skillsRequired": [],
+            "startDate": "2017-06-16T16:39:10.374Z",
+            "postedDate": "2017-06-16T16:39:10.374Z"
+        },
+        "message": "Successfully saved"
+    }
+}
+
+//update job information
+Method - post
+API - /api/updateJob/:id
+Req : /api/updateJob/6546558665jhh9
+
+Res : {
+    "response": {
+        "res": true,
+        "result": {
+            "__v": 0,
+            "salary": "25226252",
+            "jobType": fulltime,
+            "jobLocation" : Bangalore,
             "_id": "594409ae046c7c3e38daef91",
             "skillsRequired": [],
             "startDate": "2017-06-16T16:39:10.374Z",
