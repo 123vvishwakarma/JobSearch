@@ -139,3 +139,17 @@ Res : {
     }
 }
 
+//get single data
+Method - get
+API - /api/getJob/:id
+req : /api/getJob/5451545645fdi655
+
+//get all data
+Method - get
+API - /api/getAllJobs
+req : /api/getAllJobs
+
+//get all job
+Method - get
+API - /api/getJobsForCandidates/:id
+req : /api/getJobsForCandidates/544655664dfd4656
